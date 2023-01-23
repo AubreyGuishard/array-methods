@@ -155,25 +155,49 @@ function problemOne(){
 }
 
 let vegetarianFood = problemOne();
-console.log('vegetarianFood from filter', vegetarianFood)
+// console.log('vegetarianFood from filter', vegetarianFood)
 
 //2. Create a function that will prompt the user to enter a cuisine type and then return all dishes that match that type
 //Filter
-function problemTwo(){
-
-} 
-
+//function problemTwo(){
+    //dish_plate = prompt("What's your cuisine? Vegetarian, Hungarian, Vietnamese, Irish, French, Mexican, or Italian")
+    // if(userInput === "Vegetarian"){
+        //     alert(dish.cuisine === "Vegetarian")
+        //      console.log(userInput)
+    //}
+    
+   // let dishd_plate = plates.filter(plate => {
+        //if (plate.cuisine === "Vegetarian"){
+          //  return true
+        //}
+   // })
+    
+//let dish1_plate = problemTwo()
+//console.log(dish1_plate)
 
 //3. Create a function that will return all dishes with the cuisine type of "Italian" and a serving size greater than 5.
 //Filter
 function problemThree(){
-    
+
+    let results = dishes.filter(function(dish){
+        console.log("Italian dish: ", dish)
+        if(dish.cuisine === "Italian" && dish.servings > 5){
+            return true;
+        }
+    })
+
+    return results;
 }
+
+let italianFood = problemThree();
+console.log('italianFood from filter', italianFood)
 
 
 //4. Create a function that will return only dishes whose id number matches their serving count.
 //Filter
-
+function problemFour(){
+    
+}
 
 
 //5. Create a function that will return only dishes whose serving count is even.
